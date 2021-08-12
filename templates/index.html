@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/common.css">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+
+  <body>
+    <!-- 見出し -->
+    <h1>Mom's Note</h1>
+
+    <!-- テンプレート：記事を繰り返し表示 -->
+    {% for article in articles | reverse %}
+    <!-- 内容を表示する箱-->
+    <article>
+      <!-- 画像を表示 -->
+      <img src="/uploads/{{article['image_name']}}">
+      <!-- 時間を表示 -->
+      <time>{{article['time']}}</time>
+      <!-- テキストを表示 -->
+      <h2>{{article['title']}}</h2>
+    </article>
+    <!-- テンプレート：記事の繰り返しを終了 -->
+    {% endfor %}
+    
+    <footer>
+      <a href="/create">投稿する</a>
+    </footer>
+
+  </body>
+</html>

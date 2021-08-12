@@ -1,0 +1,76 @@
+/* ===== Webサイト全体のスタイル ===== */
+/* Webサイト全体 */
+body {
+  background: url(paper.png);
+  padding: 20px;
+}
+
+
+/* ===== 記事の一覧ページのスタイル ===== */
+/* タイトルの見出し */
+h1 {
+  color: rgb(0, 200, 200);
+  font-size: 50px;
+  font-family: lobster;
+  margin-bottom: 10px;
+}
+
+/* 記事の箱 */
+article {
+  background: white;
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* 記事の見出し */
+h2 {
+  font-size: 16px;
+}
+
+/* 記事の画像 */
+img {
+  max-width: 100%;
+}
+
+/* 記事の投稿時間 */
+time {
+  color: silver;
+  font-size: 10px;
+}
+
+
+/* ===== 記事の投稿ページのスタイル ===== */
+/* 文字の入力フィールド */
+input {
+  width: 250px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* 送信ボタン */
+button {
+  color: white;
+  background: rgb(0, 200, 200);
+  padding: 5px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* ボタンにさわったとき */
+button:hover {
+  background: orange;
+  cursor: pointer;
+}
+
+/* フッター */
+footer {
+  clear: both;
+}
+
+footer a {
+  color: black;
+  font-size: 12px;
+}
